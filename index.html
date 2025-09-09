@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Random Joke Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <main class="card" role="main" aria-labelledby="title">
+      <header>
+        <div class="logo">J🃏</div>
+        <div>
+          <h1 id="title">Random Joke Generator</h1>
+          <p class="lead">Laugh on demand — fresh jokes pulled from the web (with local fallback).</p>
+        </div>
+      </header>
+
+      <section class="joke" id="joke" aria-live="polite" aria-atomic="true">
+        <div class="setup" id="setup">Click "New Joke" to start — pronto! 🎯</div>
+        <div class="punchline" id="punchline"></div>
+      </section>
+
+      <div class="controls">
+        <div class="left">
+          <button id="newJoke" class="primary" title="Get a new joke">😂 New Joke</button>
+          <button id="tweet" class="ghost" title="Share this joke on Twitter">🐦 Tweet</button>
+        </div>
+
+        <div class="meta">
+          <div id="status">Ready</div>
+        </div>
+      </div>
+
+      <footer>Tip: If the API fails, the app will use a built-in joke.</footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
